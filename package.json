@@ -1,6 +1,6 @@
 {
   "name": "@nuxtus/nuxt-module",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -27,42 +27,47 @@
     "@nuxt/module-builder": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@nuxtus/generator": "^1.2.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "eslint": "latest",
+    "nuxt": "^3.0.0-rc.6",
     "nuxt-directus": "^2.2.0",
-    "nuxt": "^3.0.0-rc.6"
+    "semantic-release": "^19.0.3"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nuxtus/nuxt-module.git"
   },
   "release": {
-		"branches": "main",
-		"plugins": [
-			[
-				"@semantic-release/commit-analyzer",
-				{
-					"releaseRules": [
-						{
-							"type": "revert",
-							"release": "patch"
-						},
-						{
-							"type": "refactor",
-							"release": "minor"
-						}
-					]
-				}
-			],
-			"@semantic-release/release-notes-generator",
-			[
-				"@semantic-release/changelog",
-				{
-					"changelogTitle": "Changelog"
-				}
-			],
-			"@semantic-release/npm",
-			"@semantic-release/git",
-			"@semantic-release/github"
-		]
-	}
+    "branches": "main",
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "releaseRules": [
+            {
+              "type": "revert",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "minor"
+            }
+          ]
+        }
+      ],
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogTitle": "Changelog"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  }
 }
