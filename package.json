@@ -28,11 +28,41 @@
     "@nuxtjs/eslint-config-typescript": "latest",
     "@nuxtus/generator": "^1.2.0",
     "eslint": "latest",
-    "nuxt-directus": "^2.2.0",
-    "nuxt": "^3.0.0-rc.6"
+    "nuxt": "^3.0.0-rc.6",
+    "nuxt-directus": "^2.2.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nuxtus/nuxt-module.git"
+  },
+  "release": {
+    "branches": "main",
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "releaseRules": [
+            {
+              "type": "revert",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "minor"
+            }
+          ]
+        }
+      ],
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogTitle": "Changelog"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
   }
 }
