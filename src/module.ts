@@ -1,5 +1,7 @@
-import { addPlugin, defineNuxtModule } from '@nuxt/kit'
+import { addDevServerHandler, addPlugin, defineNuxtModule } from '@nuxt/kit'
 
+import collectionHandler from './endpoints/collection.post'
+import fieldHandler from './endpoints/field.post'
 import { fileURLToPath } from 'url'
 import { resolve } from 'path'
 
@@ -21,5 +23,15 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt.options.build.transpile.push(runtimeDir)
       addPlugin(resolve(runtimeDir, 'plugin'))
     }
+    addDevServerHandler({
+      route: '/api/directus/field',
+      // method: 'POST', // Not required as we are only adding to dev server
+      handler: fieldHandler
+    })
+    addDevServerHandler({
+      route: '/api/directus/collection',
+      // method: 'POST', // Not required as we are only adding to dev server
+      handler: collectionHandler
+    })
   }
 })
