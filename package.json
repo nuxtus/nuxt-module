@@ -1,5 +1,5 @@
 {
-  "name": "nuxtus",
+  "name": "@nuxtus/nuxt-module",
   "version": "0.0.0-development",
   "license": "MIT",
   "type": "module",
