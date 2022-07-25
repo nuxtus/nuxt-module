@@ -1,5 +1,6 @@
 {
   "name": "@nuxtus/nuxt-module",
+  "description": "Nuxt module for automation between Nuxt and Directus.",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
