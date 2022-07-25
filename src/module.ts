@@ -1,24 +1,37 @@
-import { resolve } from 'path'
+import { addDevServerHandler, addPlugin, defineNuxtModule } from '@nuxt/kit'
+
+import collectionHandler from './endpoints/collection.post'
+import fieldHandler from './endpoints/field.post'
 import { fileURLToPath } from 'url'
-import { defineNuxtModule, addPlugin } from '@nuxt/kit'
+import { resolve } from 'path'
 
 export interface ModuleOptions {
-  addPlugin: boolean
+  authDirectus: boolean;
 }
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule'
+    name: 'nuxtus',
+    configKey: 'nuxtus'
   },
   defaults: {
-    addPlugin: true
+    authDirectus: true
   },
   setup (options, nuxt) {
-    if (options.addPlugin) {
+    if (options.authDirectus) {
       const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
       nuxt.options.build.transpile.push(runtimeDir)
       addPlugin(resolve(runtimeDir, 'plugin'))
     }
+    addDevServerHandler({
+      route: '/api/directus/field',
+      // method: 'POST', // Not required as we are only adding to dev server
+      handler: fieldHandler
+    })
+    addDevServerHandler({
+      route: '/api/directus/collection',
+      // method: 'POST', // Not required as we are only adding to dev server
+      handler: collectionHandler
+    })
   }
 })

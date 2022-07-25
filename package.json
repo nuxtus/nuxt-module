@@ -1,6 +1,6 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
+  "name": "@nuxtus/nuxt-module",
+  "version": "0.0.0-development",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -26,7 +26,13 @@
   "devDependencies": {
     "@nuxt/module-builder": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
+    "@nuxtus/generator": "^1.2.0",
     "eslint": "latest",
+    "nuxt-directus": "^2.2.0",
     "nuxt": "^3.0.0-rc.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nuxtus/nuxt-module.git"
   }
 }
