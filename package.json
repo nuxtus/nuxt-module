@@ -15,6 +15,15 @@
   "files": [
     "dist"
   ],
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/nuxtus/nuxt-module"
+	},
+  "publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"author": "Craig Harman",
   "scripts": {
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
