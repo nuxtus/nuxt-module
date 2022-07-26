@@ -1,5 +1,12 @@
 Changelog
 
+## [1.0.1](https://github.com/nuxtus/nuxt-module/compare/v1.0.0...v1.0.1) (2022-07-26)
+
+
+### Bug Fixes
+
+* :green_heart: update readme to trigger CICD build ([30de635](https://github.com/nuxtus/nuxt-module/commit/30de635795baad0d35101fa47c17578060c1c750))
+
 # 1.0.0 (2022-07-25)
 
 

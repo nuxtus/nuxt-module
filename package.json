@@ -1,7 +1,7 @@
 {
   "name": "@nuxtus/nuxt-module",
   "description": "Nuxt module for automation between Nuxt and Directus.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -16,14 +16,14 @@
     "dist"
   ],
   "repository": {
-		"type": "git",
-		"url": "https://github.com/nuxtus/nuxt-module"
-	},
+    "type": "git",
+    "url": "https://github.com/nuxtus/nuxt-module.git"
+  },
   "publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org/"
-	},
-	"author": "Craig Harman",
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "Craig Harman",
   "scripts": {
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
@@ -45,10 +45,6 @@
     "nuxt": "^3.0.0-rc.6",
     "nuxt-directus": "^2.2.0",
     "semantic-release": "^19.0.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nuxtus/nuxt-module.git"
   },
   "release": {
     "branches": "main",
