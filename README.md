@@ -1,4 +1,4 @@
-# Nuxt Module
+# Nuxtus Nuxt Module
 
 The Nuxtus Nuxt module provides Nuxt applications with a suite of tools that make dealing with Directus and Nuxt easier. This includes endpoints for automatically adding Directus collections to Nuxt, typing these collections and an automatic authentication plugin.
 
