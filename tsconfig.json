@@ -1,4 +1,3 @@
 {
-  "extends": "./playground/.nuxt/tsconfig.json",
-  "module": "ESNext"
+  "extends": "./playground/.nuxt/tsconfig.json"
 }
