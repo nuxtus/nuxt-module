@@ -8,7 +8,7 @@ It can be used independently but was built for the [Nuxtus Boilerplate](https://
 
 ```bash
 npm install nuxt-directus
-npm install --save-dev @nuxt/nuxt-module
+npm install --save-dev @nuxtus/nuxt-module
 ```
 
 In your nuxt.config.ts file add the modules:

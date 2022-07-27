@@ -25,6 +25,7 @@
   },
   "author": "Craig Harman",
   "scripts": {
+    "build": "nuxt-module-build",
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
