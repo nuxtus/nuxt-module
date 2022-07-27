@@ -32,12 +32,12 @@
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.0.0-rc.6"
+    "@nuxt/kit": "^3.0.0-rc.6",
+    "@nuxtus/generator": "^1.2.1"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
-    "@nuxtus/generator": "^1.2.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.5",
@@ -76,5 +76,18 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ]
-  }
+  },
+  "keywords": [
+    "nuxt",
+    "directus",
+    "nuxtjs",
+    "nuxt-module",
+    "vue3",
+    "nuxt3",
+    "directus-module",
+    "nuxt-directus",
+    "nuxtdirectus",
+    "nuxt-community",
+    "nuxtus"
+  ]
 }
