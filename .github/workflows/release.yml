@@ -17,7 +17,7 @@ jobs:
       - run: npm ci
       # - run: npm run build --if-present
       # require the below to generate tsconfig.json
-      - run: npm run dev:build
+      # - run: npm run dev:build
       - run: npm run prepack
       # - run: npm test
       - run: npm install --save-dev @semantic-release/release-notes-generator @semantic-release/changelog@6 @semantic-release/git@10 @semantic-release/github@8 semantic-release@19
