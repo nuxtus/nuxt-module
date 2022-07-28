@@ -1,5 +1,13 @@
 Changelog
 
+## [1.0.2](https://github.com/nuxtus/nuxt-module/compare/v1.0.1...v1.0.2) (2022-07-27)
+
+
+### Bug Fixes
+
+* :arrow_up: upgrade @nuxtus/generator ([bbe0c76](https://github.com/nuxtus/nuxt-module/commit/bbe0c76933c6bf19df400c036e7ab57ba5d3de0b))
+* :memo: incorrect reference to [@nuxt](https://github.com/nuxt) in readme ([6ae10c0](https://github.com/nuxtus/nuxt-module/commit/6ae10c039512c42b07cd9354af0f0bfef5271c1c))
+
 ## [1.0.1](https://github.com/nuxtus/nuxt-module/compare/v1.0.0...v1.0.1) (2022-07-26)
 
 

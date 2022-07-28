@@ -1,7 +1,7 @@
 {
   "name": "@nuxtus/nuxt-module",
   "description": "Nuxt module for automation between Nuxt and Directus.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "type": "module",
   "exports": {
