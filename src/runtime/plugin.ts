@@ -1,5 +1,7 @@
 import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 
+import { useDirectusAuth } from '#imports'
+
 export default defineNuxtPlugin(async (nuxtApp) => {
   try {
     const config = useRuntimeConfig()
