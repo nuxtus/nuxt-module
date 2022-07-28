@@ -1,5 +1,12 @@
 Changelog
 
+## [1.0.3](https://github.com/nuxtus/nuxt-module/compare/v1.0.2...v1.0.3) (2022-07-28)
+
+
+### Bug Fixes
+
+* :bug: use #imports to access useDirectusAuth ([e55220e](https://github.com/nuxtus/nuxt-module/commit/e55220e1dcac457837d44746876f619d255cf692))
+
 ## [1.0.2](https://github.com/nuxtus/nuxt-module/compare/v1.0.1...v1.0.2) (2022-07-27)
 
 
