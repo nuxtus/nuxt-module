@@ -7,7 +7,7 @@ export default async (event) => {
     const nuxtus = new Generator()
     try {
       const collection = body.collection
-      nuxtus.createPage(collection, body.singleton)
+      await nuxtus.createPage(collection, body.singleton)
     } catch (err) {
       console.error(err.message)
       throw new Error('Unable to create page: ' + err.message)
