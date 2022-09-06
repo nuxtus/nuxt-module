@@ -1,5 +1,12 @@
 Changelog
 
+# [1.1.0](https://github.com/nuxtus/nuxt-module/compare/v1.0.5...v1.1.0) (2022-09-06)
+
+
+### Features
+
+* :sparkles: add delete endpoint ([f8104bd](https://github.com/nuxtus/nuxt-module/commit/f8104bd602dc13efe31ef63df836ca1c6c9ba99c))
+
 ## [1.0.5](https://github.com/nuxtus/nuxt-module/compare/v1.0.4...v1.0.5) (2022-09-06)
 
 
