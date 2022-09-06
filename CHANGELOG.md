@@ -1,5 +1,12 @@
 Changelog
 
+## [1.0.4](https://github.com/nuxtus/nuxt-module/compare/v1.0.3...v1.0.4) (2022-08-29)
+
+
+### Bug Fixes
+
+* :bug: do not attempt login if using static token ([0ac9513](https://github.com/nuxtus/nuxt-module/commit/0ac95134ba549d71ed20a4d1c58708aab5e258b5))
+
 ## [1.0.3](https://github.com/nuxtus/nuxt-module/compare/v1.0.2...v1.0.3) (2022-07-28)
 
 
