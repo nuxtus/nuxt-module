@@ -1,5 +1,12 @@
 Changelog
 
+## [1.0.5](https://github.com/nuxtus/nuxt-module/compare/v1.0.4...v1.0.5) (2022-09-06)
+
+
+### Bug Fixes
+
+* :bug: await the create page response to property report error ([db84f74](https://github.com/nuxtus/nuxt-module/commit/db84f744837af67c4688e5b37ade3a38ad37cbbc))
+
 ## [1.0.4](https://github.com/nuxtus/nuxt-module/compare/v1.0.3...v1.0.4) (2022-08-29)
 
 
