@@ -25,12 +25,10 @@ export default defineNuxtModule<ModuleOptions>({
     }
     addDevServerHandler({
       route: '/api/directus/field',
-      // method: 'POST', // Not required as we are only adding to dev server
       handler: fieldHandler
     })
     addDevServerHandler({
       route: '/api/directus/collection',
-      // method: 'POST', // Not required as we are only adding to dev server
       handler: collectionHandler
     })
   }
