@@ -1,5 +1,12 @@
 Changelog
 
+# [1.2.0](https://github.com/nuxtus/nuxt-module/compare/v1.1.0...v1.2.0) (2022-09-08)
+
+
+### Features
+
+* :sparkles: Nuxt pages are deleted when DIrectus Collections are deleted. ([b736344](https://github.com/nuxtus/nuxt-module/commit/b736344d3cf885cd9063bd11a0409f7aec141ad2))
+
 # [1.1.0](https://github.com/nuxtus/nuxt-module/compare/v1.0.5...v1.1.0) (2022-09-06)
 
 
