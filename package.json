@@ -44,7 +44,7 @@
     "@semantic-release/release-notes-generator": "10.0.3",
     "eslint": "latest",
     "nuxt": "3.0.0-rc.9",
-    "nuxt-directus": "2.4.0",
+    "nuxt-directus": "3.0.3",
     "semantic-release": "19.0.5"
   },
   "release": {
@@ -61,6 +61,10 @@
             {
               "type": "refactor",
               "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
             }
           ]
         }
