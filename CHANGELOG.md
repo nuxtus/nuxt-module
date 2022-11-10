@@ -1,5 +1,12 @@
 Changelog
 
+## [1.2.1](https://github.com/nuxtus/nuxt-module/compare/v1.2.0...v1.2.1) (2022-11-10)
+
+
+### Bug Fixes
+
+* :bug: Update to Nuxtus 3.0.0-rc.13 ([7f95735](https://github.com/nuxtus/nuxt-module/commit/7f957358f17154107dae8c2072f083037cf63f45))
+
 # [1.2.0](https://github.com/nuxtus/nuxt-module/compare/v1.1.0...v1.2.0) (2022-09-08)
 
 
