@@ -43,7 +43,7 @@
     "@semantic-release/github": "8.0.6",
     "@semantic-release/release-notes-generator": "10.0.3",
     "eslint": "latest",
-    "nuxt": "3.0.0-rc.13",
+    "nuxt": "3.0.0",
     "nuxt-directus": "3.2.1",
     "semantic-release": "19.0.5"
   },
