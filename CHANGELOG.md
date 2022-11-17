@@ -1,5 +1,18 @@
 Changelog
 
+# [1.3.0](https://github.com/nuxtus/nuxt-module/compare/v1.2.1...v1.3.0) (2022-11-17)
+
+
+### Bug Fixes
+
+* :bug: Remove h3 related warnings ([f50421c](https://github.com/nuxtus/nuxt-module/commit/f50421c42892d1589a3790b006f434d31ef44cbd))
+* :bug: Replace deprecated useBody with readBody ([1ce5e2f](https://github.com/nuxtus/nuxt-module/commit/1ce5e2fe6c6b6bc50af1e290c8ba16bd615f316a))
+
+
+### Features
+
+* :sparkles: Nuxt 3.0.0 compatibility added ([5746813](https://github.com/nuxtus/nuxt-module/commit/5746813db8b5bce6430dbf213276af842e74f043))
+
 ## [1.2.1](https://github.com/nuxtus/nuxt-module/compare/v1.2.0...v1.2.1) (2022-11-10)
 
 
