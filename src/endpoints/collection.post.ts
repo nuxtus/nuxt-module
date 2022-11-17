@@ -1,8 +1,8 @@
 import Generator from '@nuxtus/generator'
-import { useBody } from 'h3'
+import { readBody } from 'h3'
 
 async function deleteCollection (event) {
-  const body = await useBody(event)
+  // const body = await useBody(event)
   const nuxtus = new Generator()
   try {
     const collection: string = event.req.url.substring(1)
@@ -23,7 +23,7 @@ export default async (event) => {
       return deleteCollection(event)
     }
 
-    const body = await useBody(event)
+    const body = await readBody(event)
     const nuxtus = new Generator()
     try {
       const collection = body.collection
