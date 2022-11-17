@@ -1,6 +1,7 @@
 import { addDevServerHandler, addPlugin, defineNuxtModule } from '@nuxt/kit'
 
 import collectionHandler from './endpoints/collection.post'
+import { eventHandler } from 'h3'
 import fieldHandler from './endpoints/field.post'
 import { fileURLToPath } from 'url'
 import { resolve } from 'path'
@@ -25,11 +26,11 @@ export default defineNuxtModule<ModuleOptions>({
     }
     addDevServerHandler({
       route: '/api/directus/field',
-      handler: fieldHandler
+      handler: eventHandler(fieldHandler)
     })
     addDevServerHandler({
       route: '/api/directus/collection',
-      handler: collectionHandler
+      handler: eventHandler(collectionHandler)
     })
   }
 })
