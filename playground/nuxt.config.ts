@@ -1,5 +1,4 @@
 import Nuxtus from '..'
-import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: ['nuxt-directus', Nuxtus],
