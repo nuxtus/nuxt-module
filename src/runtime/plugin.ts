@@ -8,11 +8,12 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     if (!Object.hasOwn(config.directus, 'token')) {
       const { login } = useDirectusAuth()
       await login({
-        email: config.public.directusEmail,
-        password: config.public.directusPassword
+        email: config.nuxtus.directus.email,
+        password: config.nuxtus.directus.password
       })
     }
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error(error)
   }
 })
