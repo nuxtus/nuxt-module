@@ -33,8 +33,8 @@
   },
   "dependencies": {
     "@nuxt/kit": "3.0.0",
-    "@nuxtus/generator": "^1.5.0",
-    "h3": "^1.0.1"
+    "@nuxtus/generator": "1.5.0",
+    "h3": "1.0.1"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
