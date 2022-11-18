@@ -1,5 +1,17 @@
 Changelog
 
+# [2.0.0](https://github.com/nuxtus/nuxt-module/compare/v1.3.1...v2.0.0) (2022-11-18)
+
+
+### Build System
+
+* Bumping version number ([9dc9e82](https://github.com/nuxtus/nuxt-module/commit/9dc9e82047e02dd4a7b2a95228cf57d3b94fe906))
+
+
+### BREAKING CHANGES
+
+* Directus credentials are now stored in different variable names in nuxt.config.ts and .env
+
 ## [1.3.1](https://github.com/nuxtus/nuxt-module/compare/v1.3.0...v1.3.1) (2022-11-18)
 
 
