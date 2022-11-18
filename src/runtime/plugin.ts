@@ -5,7 +5,7 @@ import { useDirectusAuth } from '#imports'
 export default defineNuxtPlugin(async (nuxtApp) => {
   try {
     const config = useRuntimeConfig()
-    if (!Object.hasOwn(config.public.directus, 'token')) {
+    if (!Object.hasOwn(config.public.nuxtus.directus, 'token')) {
       const { login } = useDirectusAuth()
       await login({
         email: config.public.nuxtus.directus.email,
