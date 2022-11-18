@@ -1,5 +1,17 @@
 Changelog
 
+## [1.3.1](https://github.com/nuxtus/nuxt-module/compare/v1.3.0...v1.3.1) (2022-11-18)
+
+
+### Bug Fixes
+
+* :bug: Update runtime config to be compatible with Nuxt 3.0.0 ([9526312](https://github.com/nuxtus/nuxt-module/commit/9526312de802c04ba8601b647cb8fb839a2b651e))
+
+
+### BREAKING CHANGES
+
+* Name of Directus credentials changed in nuxt.config.ts and .env
+
 # [1.3.0](https://github.com/nuxtus/nuxt-module/compare/v1.2.1...v1.3.0) (2022-11-17)
 
 
