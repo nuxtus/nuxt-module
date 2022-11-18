@@ -1,5 +1,12 @@
 Changelog
 
+# [2.1.0](https://github.com/nuxtus/nuxt-module/compare/v2.0.0...v2.1.0) (2022-11-18)
+
+
+### Bug Fixes
+
+* :bug: Use public configuration variables for login ([6932874](https://github.com/nuxtus/nuxt-module/commit/6932874319e40e639f527233a6c68fbbb43bc9ac))
+
 # [2.0.0](https://github.com/nuxtus/nuxt-module/compare/v1.3.1...v2.0.0) (2022-11-18)
 
 
