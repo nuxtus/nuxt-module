@@ -45,7 +45,7 @@
     "@semantic-release/release-notes-generator": "10.0.3",
     "eslint": "latest",
     "nuxt": "3.0.0",
-    "nuxt-directus": "3.2.2",
+    "nuxt-directus": "5.6.0",
     "semantic-release": "19.0.5"
   },
   "release": {
