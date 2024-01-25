@@ -34,7 +34,7 @@
   "dependencies": {
     "@nuxt/kit": "3.0.0",
     "@nuxtus/generator": "1.8.0",
-    "h3": "1.0.1"
+    "h3": "1.10.1"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
