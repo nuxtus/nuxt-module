@@ -32,7 +32,7 @@
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
-    "@nuxt/kit": "3.0.0",
+    "@nuxt/kit": "3.10.1",
     "@nuxtus/generator": "1.8.0",
     "h3": "1.10.1"
   },
@@ -44,7 +44,7 @@
     "@semantic-release/github": "8.1.0",
     "@semantic-release/release-notes-generator": "10.0.3",
     "eslint": "latest",
-    "nuxt": "3.0.0",
+    "nuxt": "3.10.1",
     "nuxt-directus": "5.6.0",
     "semantic-release": "19.0.5"
   },
