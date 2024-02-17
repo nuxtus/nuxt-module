@@ -45,7 +45,6 @@
     "@semantic-release/release-notes-generator": "12.1.0",
     "eslint": "latest",
     "nuxt": "3.10.1",
-    "nuxt-directus": "5.6.0",
     "semantic-release": "23.0.2"
   },
   "release": {
@@ -94,5 +93,8 @@
     "nuxtdirectus",
     "nuxt-community",
     "nuxtus"
-  ]
+  ],
+  "volta": {
+    "node": "20.11.1"
+  }
 }
