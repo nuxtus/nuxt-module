@@ -32,6 +32,7 @@
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
+    "@directus/sdk": "^15.0.1",
     "@nuxt/kit": "3.10.1",
     "@nuxtus/generator": "1.8.0",
     "h3": "1.10.1"

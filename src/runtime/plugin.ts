@@ -1,19 +1,66 @@
-import { defineNuxtPlugin, useRuntimeConfig } from "#app";
+import type {
+  DirectusClient,
+  RestClient,
+  StaticTokenClient,
+} from "@directus/sdk";
+import {
+  createDirectus,
+  readItem,
+  readItems,
+  rest,
+  staticToken,
+} from "@directus/sdk";
 
-import { useDirectusAuth } from "#imports";
+import type { Ref } from "vue";
+import type { NuxtError } from "#app";
 
-export default defineNuxtPlugin(async (nuxtApp) => {
-  try {
-    const config = useRuntimeConfig();
-    if (!Object.hasOwn(config.nuxtus.directus, "token")) {
-      const { login } = useDirectusAuth();
-      await login({
-        email: config.nuxtus.directus.email,
-        password: config.nuxtus.directus.password,
+// TODO: Import schema from ../interfaces/nuxtus.ts?
+type Schema = {};
+
+type DirectusRest = DirectusClient<Schema> & RestClient<Schema>;
+
+type DirectusRestToken = DirectusClient<Schema> &
+  RestClient<Schema> &
+  StaticTokenClient<Schema>;
+
+let directus: DirectusRest | DirectusRestToken;
+
+export default defineNuxtPlugin(() => {
+  const runtimeConfig = useRuntimeConfig();
+
+  // TODO: If we are using server then we can simply retrieve everything using the admin details???
+  if (process.client || !runtimeConfig.public.nuxtus.authDirectus) {
+    directus = createDirectus(runtimeConfig.public.nuxtus.directus.url).with(
+      rest()
+    ) as DirectusRest;
+  } else {
+    if (!runtimeConfig.nuxtus.directus.token) {
+      throw createError({
+        statusCode: 400,
+        statusMessage:
+          "No Directus token set when requiring authenticated user.",
       });
     }
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error(error);
+    directus = createDirectus(runtimeConfig.public.nuxtus.directus.url)
+      .with(rest())
+      .with(
+        staticToken(runtimeConfig.nuxtus.directus.token)
+      ) as DirectusRestToken;
+
+    // TODO: In create CLI make a note that this token/user should not be able to access UI or write anything! Public token!
   }
+
+  function checkError(error: Ref<NuxtError<unknown> | null>): void {
+    if (error.value) {
+      throw createError({
+        statusCode: error.value.statusCode,
+        statusMessage:
+          "An error occurred fetching Directus data. Check server logs - this is usually caused by invalid/missing permissions.",
+      });
+    }
+  }
+
+  return {
+    provide: { checkError, directus, readItem, readItems },
+  };
 });
