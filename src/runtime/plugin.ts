@@ -7,6 +7,7 @@ import {
   createDirectus,
   readItem,
   readItems,
+  readSingleton,
   rest,
   staticToken,
 } from "@directus/sdk";
@@ -28,7 +29,6 @@ let directus: DirectusRest | DirectusRestToken;
 export default defineNuxtPlugin(() => {
   const runtimeConfig = useRuntimeConfig();
 
-  // TODO: If we are using server then we can simply retrieve everything using the admin details???
   if (process.client || !runtimeConfig.public.nuxtus.authDirectus) {
     directus = createDirectus(runtimeConfig.public.nuxtus.directus.url).with(
       rest()
@@ -46,8 +46,6 @@ export default defineNuxtPlugin(() => {
       .with(
         staticToken(runtimeConfig.nuxtus.directus.token)
       ) as DirectusRestToken;
-
-    // TODO: In create CLI make a note that this token/user should not be able to access UI or write anything! Public token!
   }
 
   function checkError(error: Ref<NuxtError<unknown> | null>): void {
@@ -61,6 +59,6 @@ export default defineNuxtPlugin(() => {
   }
 
   return {
-    provide: { checkError, directus, readItem, readItems },
+    provide: { checkError, directus, readItem, readItems, readSingleton },
   };
 });
