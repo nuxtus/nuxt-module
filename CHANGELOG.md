@@ -1,5 +1,21 @@
 Changelog
 
+# [2.3.0](https://github.com/nuxtus/nuxt-module/compare/v2.2.0...v2.3.0) (2024-02-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtus/generator to v1.9.0 ([df3c3c3](https://github.com/nuxtus/nuxt-module/commit/df3c3c386c4aa6eb14dd0a7f368b1c84755b648c))
+* **deps:** update dependency h3 to v1.10.1 ([2445518](https://github.com/nuxtus/nuxt-module/commit/2445518db27a5aebb89e7d3dc17e5ea481878a65))
+* **deps:** update dependency h3 to v1.10.2 ([c14eb73](https://github.com/nuxtus/nuxt-module/commit/c14eb733d86aed3f8fb901cb78b8be08a036faba))
+* **deps:** update nuxtjs monorepo to v3.10.1 ([c4c2a2e](https://github.com/nuxtus/nuxt-module/commit/c4c2a2ee8480219738bcaf784949a07e108a9095))
+* **deps:** update nuxtjs monorepo to v3.10.2 ([ecedf57](https://github.com/nuxtus/nuxt-module/commit/ecedf57735413b766677f175f35f4a74e55140bd))
+
+
+### Features
+
+* :sparkles: add readSingleton to plugin ([a9a6636](https://github.com/nuxtus/nuxt-module/commit/a9a66361b9adba8ad3cbcd67b96b00e66d603af1))
+
 # [2.2.0](https://github.com/nuxtus/nuxt-module/compare/v2.1.0...v2.2.0) (2022-11-18)
 
 
