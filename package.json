@@ -32,21 +32,21 @@
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
-    "@nuxt/kit": "3.0.0",
-    "@nuxtus/generator": "1.8.0",
-    "h3": "1.0.1"
+    "@directus/sdk": "^15.0.1",
+    "@nuxt/kit": "3.10.2",
+    "@nuxtus/generator": "1.9.0",
+    "h3": "1.10.2"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
-    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "8.0.6",
-    "@semantic-release/release-notes-generator": "10.0.3",
+    "@semantic-release/github": "9.2.6",
+    "@semantic-release/release-notes-generator": "12.1.0",
     "eslint": "latest",
-    "nuxt": "3.0.0",
-    "nuxt-directus": "3.2.2",
-    "semantic-release": "19.0.5"
+    "nuxt": "3.10.2",
+    "semantic-release": "23.0.2"
   },
   "release": {
     "branches": "main",
@@ -94,5 +94,8 @@
     "nuxtdirectus",
     "nuxt-community",
     "nuxtus"
-  ]
+  ],
+  "volta": {
+    "node": "20.11.1"
+  }
 }

@@ -1,10 +1,10 @@
-import { addDevServerHandler, addPlugin, defineNuxtModule } from '@nuxt/kit'
+import { fileURLToPath } from "url";
+import { resolve } from "path";
+import { addDevServerHandler, addPlugin, defineNuxtModule } from "@nuxt/kit";
 
-import collectionHandler from './endpoints/collection.post'
-import { eventHandler } from 'h3'
-import fieldHandler from './endpoints/field.post'
-import { fileURLToPath } from 'url'
-import { resolve } from 'path'
+import { eventHandler } from "h3";
+import collectionHandler from "./endpoints/collection.post";
+import fieldHandler from "./endpoints/field.post";
 
 export interface ModuleOptions {
   authDirectus: boolean;
@@ -12,25 +12,25 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxtus',
-    configKey: 'nuxtus'
+    name: "nuxtus",
+    configKey: "nuxtus",
   },
   defaults: {
-    authDirectus: true
+    authDirectus: true,
   },
-  setup (options, nuxt) {
+  setup(options, nuxt) {
     if (options.authDirectus) {
-      const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
-      nuxt.options.build.transpile.push(runtimeDir)
-      addPlugin(resolve(runtimeDir, 'plugin'))
+      const runtimeDir = fileURLToPath(new URL("./runtime", import.meta.url));
+      nuxt.options.build.transpile.push(runtimeDir);
+      addPlugin(resolve(runtimeDir, "plugin"));
     }
     addDevServerHandler({
-      route: '/api/directus/field',
-      handler: eventHandler(fieldHandler)
-    })
+      route: "/api/directus/field",
+      handler: eventHandler(fieldHandler),
+    });
     addDevServerHandler({
-      route: '/api/directus/collection',
-      handler: eventHandler(collectionHandler)
-    })
-  }
-})
+      route: "/api/directus/collection",
+      handler: eventHandler(collectionHandler),
+    });
+  },
+});
