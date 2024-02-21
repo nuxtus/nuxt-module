@@ -1,5 +1,63 @@
 Changelog
 
+# [2.2.0](https://github.com/nuxtus/nuxt-module/compare/v2.1.0...v2.2.0) (2022-11-18)
+
+
+### Features
+
+* :sparkles: @nuxtus/generator 1.8.0 and @nuxtus/cli 2.0.0 ([dde1659](https://github.com/nuxtus/nuxt-module/commit/dde1659d0245722d3989747c66affb026ee326c1))
+
+# [2.1.0](https://github.com/nuxtus/nuxt-module/compare/v2.0.0...v2.1.0) (2022-11-18)
+
+
+### Bug Fixes
+
+* :bug: Use public configuration variables for login ([6932874](https://github.com/nuxtus/nuxt-module/commit/6932874319e40e639f527233a6c68fbbb43bc9ac))
+
+# [2.0.0](https://github.com/nuxtus/nuxt-module/compare/v1.3.1...v2.0.0) (2022-11-18)
+
+
+### Build System
+
+* Bumping version number ([9dc9e82](https://github.com/nuxtus/nuxt-module/commit/9dc9e82047e02dd4a7b2a95228cf57d3b94fe906))
+
+
+### BREAKING CHANGES
+
+* Directus credentials are now stored in different variable names in nuxt.config.ts and .env
+
+## [1.3.1](https://github.com/nuxtus/nuxt-module/compare/v1.3.0...v1.3.1) (2022-11-18)
+
+
+### Bug Fixes
+
+* :bug: Update runtime config to be compatible with Nuxt 3.0.0 ([9526312](https://github.com/nuxtus/nuxt-module/commit/9526312de802c04ba8601b647cb8fb839a2b651e))
+
+
+### BREAKING CHANGES
+
+* Name of Directus credentials changed in nuxt.config.ts and .env
+
+# [1.3.0](https://github.com/nuxtus/nuxt-module/compare/v1.2.1...v1.3.0) (2022-11-17)
+
+
+### Bug Fixes
+
+* :bug: Remove h3 related warnings ([f50421c](https://github.com/nuxtus/nuxt-module/commit/f50421c42892d1589a3790b006f434d31ef44cbd))
+* :bug: Replace deprecated useBody with readBody ([1ce5e2f](https://github.com/nuxtus/nuxt-module/commit/1ce5e2fe6c6b6bc50af1e290c8ba16bd615f316a))
+
+
+### Features
+
+* :sparkles: Nuxt 3.0.0 compatibility added ([5746813](https://github.com/nuxtus/nuxt-module/commit/5746813db8b5bce6430dbf213276af842e74f043))
+
+## [1.2.1](https://github.com/nuxtus/nuxt-module/compare/v1.2.0...v1.2.1) (2022-11-10)
+
+
+### Bug Fixes
+
+* :bug: Update to Nuxtus 3.0.0-rc.13 ([7f95735](https://github.com/nuxtus/nuxt-module/commit/7f957358f17154107dae8c2072f083037cf63f45))
+
 # [1.2.0](https://github.com/nuxtus/nuxt-module/compare/v1.1.0...v1.2.0) (2022-09-08)
 
 
