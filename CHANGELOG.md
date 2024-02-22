@@ -1,5 +1,12 @@
 Changelog
 
+## [2.3.1](https://github.com/nuxtus/nuxt-module/compare/v2.3.0...v2.3.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* :bug: unrequired auth checks removed and corrected auth boolean check ([3551160](https://github.com/nuxtus/nuxt-module/commit/35511604e2a332be26c41893e3a55b31cca9d86b))
+
 # [2.3.0](https://github.com/nuxtus/nuxt-module/compare/v2.2.0...v2.3.0) (2024-02-21)
 
 
