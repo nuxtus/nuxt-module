@@ -34,11 +34,11 @@ export default defineNuxtPlugin(() => {
       rest()
     ) as DirectusRest;
   } else {
-    if (!runtimeConfig.nuxtus.directus.token) {
+    if (!runtimeConfig.public.nuxtus.directus.token) {
       throw createError({
         statusCode: 400,
         statusMessage:
-          "No Directus token set when requiring authenticated user.",
+          "No Directus token set when requiring authenticated user or using on client.",
       });
     }
     directus = createDirectus(runtimeConfig.public.nuxtus.directus.url)
