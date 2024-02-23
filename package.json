@@ -1,7 +1,7 @@
 {
   "name": "@nuxtus/nuxt-module",
   "description": "Nuxt module for automation between Nuxt and Directus.",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "license": "MIT",
   "author": "Craig Harman",
   "repository": {

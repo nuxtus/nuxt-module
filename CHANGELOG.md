@@ -1,5 +1,12 @@
 Changelog
 
+# [2.4.0](https://github.com/nuxtus/nuxt-module/compare/v2.3.1...v2.4.0) (2024-02-23)
+
+
+### Features
+
+* :sparkles: update to new nuxt module starter kit ([6650c4a](https://github.com/nuxtus/nuxt-module/commit/6650c4a792a2b9bf47deddf8d81532c34cb7337f))
+
 ## [2.3.1](https://github.com/nuxtus/nuxt-module/compare/v2.3.0...v2.3.1) (2024-02-22)
 
 
