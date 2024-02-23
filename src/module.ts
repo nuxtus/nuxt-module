@@ -1,11 +1,15 @@
-import { fileURLToPath } from "url";
-import { resolve } from "path";
-import { addDevServerHandler, addPlugin, defineNuxtModule } from "@nuxt/kit";
+import {
+  addDevServerHandler,
+  addPlugin,
+  createResolver,
+  defineNuxtModule,
+} from "@nuxt/kit";
 
-import { eventHandler } from "h3";
 import collectionHandler from "./endpoints/collection.post";
+import { eventHandler } from "h3";
 import fieldHandler from "./endpoints/field.post";
 
+// Module options TypeScript interface definition
 export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
@@ -13,11 +17,13 @@ export default defineNuxtModule<ModuleOptions>({
     name: "nuxtus",
     configKey: "nuxtus",
   },
+  // Default configuration options of the Nuxt module
   defaults: {},
-  setup(options, nuxt) {
-    const runtimeDir = fileURLToPath(new URL("./runtime", import.meta.url));
-    nuxt.options.build.transpile.push(runtimeDir);
-    addPlugin(resolve(runtimeDir, "plugin"));
+  setup(_, nuxt) {
+    const resolver = createResolver(import.meta.url);
+
+    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
+    addPlugin(resolver.resolve("./runtime/plugin"));
 
     addDevServerHandler({
       route: "/api/directus/field",
