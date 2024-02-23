@@ -11,12 +11,34 @@ import {
   rest,
   staticToken,
 } from "@directus/sdk";
+import { createError, defineNuxtPlugin, useRuntimeConfig } from "#app";
 
-import type { Ref } from "vue";
 import type { NuxtError } from "#app";
+import type { Ref } from "vue";
 
 // TODO: Import schema from ../interfaces/nuxtus.ts?
 type Schema = {};
+
+declare module "nuxt/schema" {
+  interface RuntimeConfig {
+    public: PublicRuntimeConfig;
+    nuxtus: {
+      directus: {
+        email: string;
+        password: string;
+        token?: string;
+      };
+    };
+  }
+  interface PublicRuntimeConfig {
+    nuxtus: {
+      authDirectus: Boolean;
+      directus: {
+        url: string;
+      };
+    };
+  }
+}
 
 type DirectusRest = DirectusClient<Schema> & RestClient<Schema>;
 
@@ -26,7 +48,7 @@ type DirectusRestToken = DirectusClient<Schema> &
 
 let directus: DirectusRest | DirectusRestToken;
 
-export default defineNuxtPlugin(() => {
+export default defineNuxtPlugin((nuxtApp) => {
   const runtimeConfig = useRuntimeConfig();
 
   if (process.client || !runtimeConfig.public.nuxtus.authDirectus) {
@@ -34,7 +56,7 @@ export default defineNuxtPlugin(() => {
       rest()
     ) as DirectusRest;
   } else {
-    if (!runtimeConfig.public.nuxtus.directus.token) {
+    if (!runtimeConfig.nuxtus.directus.token) {
       throw createError({
         statusCode: 400,
         statusMessage:
