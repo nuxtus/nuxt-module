@@ -35,7 +35,7 @@
     "@directus/sdk": "^15.0.1",
     "@nuxt/kit": "^3.10.3",
     "@nuxtus/generator": "1.9.1",
-    "h3": "1.10.2"
+    "h3": "1.13.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
