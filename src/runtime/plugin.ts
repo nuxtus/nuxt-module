@@ -17,7 +17,7 @@ import type { NuxtError } from "#app";
 import type { Ref } from "vue";
 
 // TODO: Import schema from ../interfaces/nuxtus.ts?
-type Schema = {};
+type Schema = Record<string, never>;
 
 declare module "nuxt/schema" {
   interface RuntimeConfig {
@@ -32,7 +32,7 @@ declare module "nuxt/schema" {
   }
   interface PublicRuntimeConfig {
     nuxtus: {
-      authDirectus: Boolean;
+      authDirectus: boolean;
       directus: {
         url: string;
       };
@@ -48,10 +48,10 @@ type DirectusRestToken = DirectusClient<Schema> &
 
 let directus: DirectusRest | DirectusRestToken;
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin((_nuxtApp) => {
   const runtimeConfig = useRuntimeConfig();
 
-  if (process.client || !runtimeConfig.public.nuxtus.authDirectus) {
+  if (import.meta.client || !runtimeConfig.public.nuxtus.authDirectus) {
     directus = createDirectus(runtimeConfig.public.nuxtus.directus.url).with(
       rest()
     ) as DirectusRest;
