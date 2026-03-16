@@ -1,5 +1,17 @@
 Changelog
 
+## [2.4.1](https://github.com/nuxtus/nuxt-module/compare/v2.4.0...v2.4.1) (2026-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @directus/sdk to v21 ([f5b9830](https://github.com/nuxtus/nuxt-module/commit/f5b983076e595fc60dc166b7087f081dd0224cf1))
+* **deps:** update dependency @nuxtus/generator to v1.9.2 ([033f9ea](https://github.com/nuxtus/nuxt-module/commit/033f9ea42bf5fee8084fddcb88a899bc9e3ac883))
+* **deps:** update dependency @nuxtus/generator to v1.9.3 ([f2d96ad](https://github.com/nuxtus/nuxt-module/commit/f2d96ada3c1b745a94b5bf5c8dee6b705df7ac55))
+* **deps:** update dependency h3 to v1.15.6 ([e634a41](https://github.com/nuxtus/nuxt-module/commit/e634a41c2dbbbdc01edc3693816e139b02c11b40))
+* replace pnpm-specific .npmrc settings with npm legacy-peer-deps ([02b1016](https://github.com/nuxtus/nuxt-module/commit/02b10160e43d1d3c69df011cc7e5fb047c564d81))
+* update nuxtus/generator to 1.9.2 ([04d8feb](https://github.com/nuxtus/nuxt-module/commit/04d8feb9557c0ad1e729aea74ecca02f89d29ff0))
+
 # [2.4.0](https://github.com/nuxtus/nuxt-module/compare/v2.3.1...v2.4.0) (2024-02-23)
 
 
