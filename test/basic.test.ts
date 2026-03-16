@@ -1,5 +1,5 @@
-import { $fetch, setup } from "@nuxt/test-utils/e2e";
-import { describe, expect, it } from "vitest";
+import { setup } from "@nuxt/test-utils/e2e";
+import { describe, it } from "vitest";
 
 import { fileURLToPath } from "node:url";
 
