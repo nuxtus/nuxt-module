@@ -1,5 +1,13 @@
 Changelog
 
+## [2.4.2](https://github.com/nuxtus/nuxt-module/compare/v2.4.1...v2.4.2) (2026-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency h3 to v1.15.8 ([945c716](https://github.com/nuxtus/nuxt-module/commit/945c716563e724ef1791c5853c7b5456f95a879d))
+* **deps:** update dependency h3 to v1.15.9 ([c6500ca](https://github.com/nuxtus/nuxt-module/commit/c6500ca0fb9361e8a8aaea619cd9e6a14a9d33a0))
+
 ## [2.4.1](https://github.com/nuxtus/nuxt-module/compare/v2.4.0...v2.4.1) (2026-03-16)
 
 
