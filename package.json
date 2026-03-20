@@ -32,7 +32,7 @@
   "dependencies": {
     "@directus/sdk": "^21.0.0",
     "@nuxt/kit": "^3.10.3",
-    "@nuxtus/generator": "1.9.3",
+    "@nuxtus/generator": "1.9.4",
     "h3": "1.15.9"
   },
   "devDependencies": {
